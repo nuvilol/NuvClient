@@ -9,4 +9,4 @@ TSA:WaitForChild("TPtoGuardRoom").OnServerEvent:Connect(function(plr)
 	
 	plr.Character:MoveTo(game.Workspace["Prison_guardspawn"].spawn.Position)
 
-end
+end)
