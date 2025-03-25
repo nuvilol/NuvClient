@@ -1,6 +1,9 @@
+local rs = game:GetService("ReplicatedStorage")
+local TSA = rs:WaitForChild("TSASDWASDW")
+
 local TPToGurardRoom = Instance.new("RemoteEvent")
 TPToGurardRoom.Name = "TPToGurardRoom"
-TPToGurardRoom.Parent = game:GetService("ReplicatedStorage")
+TPToGurardRoom.Parent = TSA
 
 TSA:WaitForChild("TPtoGuardRoom").OnServerEvent:Connect(function(plr)
 	
