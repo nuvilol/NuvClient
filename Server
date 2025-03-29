@@ -1,16 +1,13 @@
 -- NuvClient [Prison Life]
 
 local rs = game:GetService("ReplicatedStorage")
-local TSASDWASDW = Instance.new("Folder")
-TSASDWASDW.Name = "TSASDWASDW"
-TSASDWASDW.Parent = rs
-local TSA = rs:WaitForChild("TSASDWASDW")
+local event = rs:WaitForChild("WarnEvent")
 
 local TPToGurardRoom = Instance.new("RemoteEvent")
 TPToGurardRoom.Name = "TPToGurardRoom"
-TPToGurardRoom.Parent = TSA
+TPToGurardRoom.Parent = event
 
-TSA:WaitForChild("TPToGurardRoom", 10).OnServerEvent:Connect(function(plr)
+event.OnServerEvent:Connect(function(plr)
 	
 	print("Fired Server")
 	plr.Character:MoveTo(game.Workspace["Prison_guardspawn"].spawn.Position)
