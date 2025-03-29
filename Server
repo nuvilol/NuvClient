@@ -3,15 +3,9 @@
 local rs = game:GetService("ReplicatedStorage")
 local event = rs:WaitForChild("WarnEvent")
 
-event.OnServerEvent:Connect(function(plr, action)
+event.OnServerEvent:Connect(function(plr)
+	
 	print("Fired Server")
-	if action == "TPToGurardRoom" then
-		plr.Character:MoveTo(game.Workspace["Prison_guardspawn"].spawn.Position)
-	elseif action == "TPOutsidePrison" then
-		-- Handle teleportation outside the prison
-	elseif action == "TPInsidePrison" then
-		-- Handle teleportation inside the prison
-	else
-		print("Unknown action:", action)
-	end
+	plr.Character:MoveTo(game.Workspace["Prison_guardspawn"].spawn.Position)
+
 end)
