@@ -10,7 +10,7 @@ local TPToGurardRoom = Instance.new("RemoteEvent")
 TPToGurardRoom.Name = "TPToGurardRoom"
 TPToGurardRoom.Parent = TSA
 
-TSA:WaitForChild("TPToGurardRoom").OnServerEvent:Connect(function(plr)
+TSA:WaitForChild("TPToGurardRoom", 10).OnServerEvent:Connect(function(plr)
 	
 	print("Fired Server")
 	plr.Character:MoveTo(game.Workspace["Prison_guardspawn"].spawn.Position)
