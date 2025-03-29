@@ -215,6 +215,7 @@ TPOutsidePrison.Parent = MainBG
 
 TPOutsidePrison.MouseButton1Click:Connect(function()
 	print("TPOutsidePrison Clicked")
+	event:WaitForChild("TPOutsidePrison"):FireServer()
 end)
 
 local TPToGurardRoom = ButtonTemplate:Clone()
@@ -225,10 +226,8 @@ TPToGurardRoom.Parent = MainBG
 
 TPToGurardRoom.MouseButton1Click:Connect(function()
 	print("TPToGurardRoom Clicked")
-	-- Fire the WarnEvent with the action name
-	event:FireServer("TPToGurardRoom")
+	event:FireServer()
 end)
-
 
 local TPInsidePrison = ButtonTemplate:Clone()
 TPInsidePrison.LayoutOrder = 4
@@ -238,6 +237,7 @@ TPInsidePrison.Parent = MainBG
 
 TPInsidePrison.MouseButton1Click:Connect(function()
 	print("TPInsidePrison Clicked")
+	event:WaitForChild("TPInsidePrison"):FireServer()
 end)
 
 local KillYourself = ButtonTemplate:Clone()
