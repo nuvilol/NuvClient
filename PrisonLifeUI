@@ -205,7 +205,7 @@ local BTempCorner = UICorner12:Clone()
 BTempCorner.Parent = ButtonTemplate
 
 local RS = game:GetService("ReplicatedStorage")
-local TSASDWASDW = RS:WaitForChild("TSASDWASDW")
+local event = RS:WaitForChild("WarnEvent")
 
 local TPOutsidePrison = ButtonTemplate:Clone()
 TPOutsidePrison.LayoutOrder = 2
@@ -215,7 +215,7 @@ TPOutsidePrison.Parent = MainBG
 
 TPOutsidePrison.MouseButton1Click:Connect(function()
 	print("TPOutsidePrison Clicked")
-	TSASDWASDW:WaitForChild("TPOutsidePrison"):FireServer()
+	event:WaitForChild("TPOutsidePrison"):FireServer()
 end)
 
 local TPToGurardRoom = ButtonTemplate:Clone()
@@ -226,7 +226,7 @@ TPToGurardRoom.Parent = MainBG
 
 TPToGurardRoom.MouseButton1Click:Connect(function()
 	print("TPToGurardRoom Clicked")
-	TSASDWASDW:WaitForChild("TPToGurardRoom"):FireServer()
+	event:WaitForChild("TPToGurardRoom"):FireServer()
 end)
 
 local TPInsidePrison = ButtonTemplate:Clone()
@@ -237,7 +237,7 @@ TPInsidePrison.Parent = MainBG
 
 TPInsidePrison.MouseButton1Click:Connect(function()
 	print("TPInsidePrison Clicked")
-	TSASDWASDW:WaitForChild("TPInsidePrison"):FireServer()
+	event:WaitForChild("TPInsidePrison"):FireServer()
 end)
 
 local KillYourself = ButtonTemplate:Clone()
