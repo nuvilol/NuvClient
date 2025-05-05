@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>NuvClient</title>
+
+    <style>
+
+      .pgbg {
+
+        background-image: url('https://cdn.discordapp.com/attachments/1335910836342095876/1368737312627753171/Untitled_design_1.png?ex=68194f75&is=6817fdf5&hm=85ba4effeb0ae1dad9964e44eebc8c7e12595fed9579f3a545120406bb1ac6cb&');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+      }
+
+      .TxtColor {
+        color: azure;
+        font-size: 20px;
+      }
+
+      .TitleText {
+        color: azure;
+        font-size: 25px;
+        font:normal;
+      }
+
+      .TxtButton {
+        background: none;
+        border: none;
+        color: azure;
+        font: normal;
+        cursor: pointer;
+      }
+
+      .linkLook {
+        color: azure;
+      }
+
+      body {
+
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
+          }
+
+    </style>
+
+  </head>
+
+  <body class="pgbg">
+
+    <div id="Entry">
+
+      <img src="https://cdn.discordapp.com/attachments/1335910836342095876/1368722905269276682/Screenshot_2025-02-05_191429-removebg-preview.png?ex=6819420a&is=6817f08a&hm=b0da70dc97d84df662795db78d448e6caedf45a0936eaae0d65cab8f8ef9cb29&" height="85" width="85"> <p class="TitleText">Welcome to NuvClient</p>
+      <button onclick="loadFirstPage()" class="TxtButton">Click here to continue.</button>
+
+    </div>
+
+  </body>
+
+  <script>
+
+    function loadFirstPage() {
+
+      const newDiv = document.getElementById("Entry");
+      newDiv.style.display = "block";
+      newDiv.innerHTML = `
+        <p>Required: </p>
+        <a href="https://discord.gg/xhZnbSDP"; class="linkLook">Download NuvClient script</a>
+      `;
+
+    }
+
+  </script>
+
+</html>
