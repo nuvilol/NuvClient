@@ -26,6 +26,6 @@
 
 *Let us know how your experience was with NuvClient and how we can improve!*
 
-*If you have knowledge in Lua and would like to offer a hand we would apprecitate it, contact us via [Discord](https://nuvilol.github.io/NuvClient/NuvClient-Other.html)*
+*If you have knowledge in Lua and would like to offer a helping hand we would apprecitate it, contact us via [Discord](https://nuvilol.github.io/NuvClient/NuvClient-Other.html)*
 
 *If you have knowledge in web design we would love a helping hand, contact us via [Discord](https://nuvilol.github.io/NuvClient/NuvClient-Other.html)*
